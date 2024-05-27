@@ -29,27 +29,11 @@ nav .logo img {
     margin-right: 10px;
 }
 
-#about {
-    display: flex;
-    align-items: center;
-    padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-#offer {
-    display: flex;
-    align-items: center;
-    padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
 nav ul {
     list-style: none;
+    display: flex;
     padding: 0;
     margin: 0;
-    display: flex;
 }
 
 nav ul li {
@@ -68,6 +52,8 @@ nav ul li a.active {
 
 .hero {
     display: flex;
+    background-color: white;
+    color: black;
     justify-content: space-between;
     align-items: center;
     padding: 50px;
@@ -92,7 +78,7 @@ nav ul li a.active {
     margin-top: 20px;
     padding: 10px 20px;
     background: #000;
-    color: #fff;
+    color: goldenrod;
     text-decoration: none;
     border-radius: 5px;
 }
@@ -120,17 +106,9 @@ nav ul li a.active {
     background: #f9f9f9;
 }
 
-.services .service {
-    text-align: center;
-}
-
-.services .service img {
-    height: 100px;
-}
-
-.services .service h3 {
-    margin-top: 10px;
-    font-size: 1.2em;
+.services img {
+    max-width: 100%;
+    height: auto;
 }
 
 section {
@@ -148,7 +126,7 @@ section p {
     margin-bottom: 20px;
 }
 
-section .btn {
+.section .btn {
     display: inline-block;
     margin: 10px;
     padding: 10px 20px;
@@ -162,10 +140,40 @@ section .btn {
     color: #FFA500;
 }
 
-.offer-image img {
+#about, #offer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+
+}
+
+#about .btn,#offer .btn{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #000;
+    color: goldenrod;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.image-container {
+    flex: 1;
+}
+
+.image-container img {
     max-width: 100%;
     height: auto;
-    margin: 20px 0;
+    border-radius: 10px;
+}
+
+.text-container {
+    flex: 1;
+    padding: 20px;
 }
 
 .team-members {
@@ -234,3 +242,4 @@ footer {
     border-radius: 5px;
     font-weight: bold;
 }
+
